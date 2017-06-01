@@ -1,0 +1,594 @@
+/* Base CSS */
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: none
+}
+
+.job-bg {
+    background-image: url(../img/job-bg.jpg);
+}
+
+.start-project-bg {
+    background-image: url(../img/start-project-bg.jpg);
+}
+
+.how-bg {
+    background-image: url(../img/how-bg.png);
+}
+
+.how-bg-2 {
+    background-image: url(../img/how-bg-2.png);
+}
+
+.how-bg-3 {
+    background-image: url(../img/how-bg-3.png);
+}
+
+.rate-bg {
+    background-image: url(../img/rate-bg.png);
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.main-menu ul li a {
+    display: block;
+    padding: 17px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.main-menu ul#navigation li:hover a,
+.main-menu ul#navigation li a.active {
+    color: #ff298e;
+}
+
+.main-menu ul li a.filled-btn {
+    font-weight: 500;
+    background-color: #ff298d;
+    display: inline-block;
+    padding: 13px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.main-menu ul#navigation li a.filled-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.welcome-hero-area {
+    height: 100%;
+}
+
+.hero-area-content {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-area-content-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-area {
+    position: absolute;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.welcome-hero-area {
+    position: relative;
+    z-index: 1;
+    background: rgb(74, 51, 193);
+    background: -moz-linear-gradient(left, rgba(74, 51, 193, 1) 12%, rgba(250, 75, 232, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(74, 51, 193, 1) 12%, rgba(250, 75, 232, 1) 100%);
+    background: linear-gradient(to right, rgba(74, 51, 193, 1) 12%, rgba(250, 75, 232, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a33c1', endColorstr='#fa4be8', GradientType=1);
+}
+
+.service-bg {
+    position: relative;
+    z-index: 1;
+    background: rgb(125, 62, 216);
+    background: -moz-linear-gradient(45deg, rgba(125, 62, 216, 1) 0%, rgba(255, 64, 200, 1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(125, 62, 216, 1) 0%, rgba(255, 64, 200, 1) 100%);
+    background: linear-gradient(45deg, rgba(125, 62, 216, 1) 0%, rgba(255, 64, 200, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d3ed8', endColorstr='#ff40c8', GradientType=1);
+}
+
+.welcome-hero-area:after,
+.service-bg:after {
+    background-image: url(../img/ellipse-bg.png);
+    background-size: cover;
+    background-position: center bottom;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    opacity: 0.5;
+    background-attachment: fixed;
+}
+
+a.video-play-btn {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    line-height: 75px;
+    margin-bottom: 25px;
+}
+
+a.video-play-btn:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 75px;
+    height: 75px;
+    content: "";
+    background-color: #fff;
+    opacity: 0.35;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.hero-text-area h2 {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.hero-text-area {
+    color: #fff;
+    max-width: 473px;
+}
+
+.hero-text-area p {
+    font-size: 18px;
+    opacity: 0.5;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+a.filled-btn {
+    background-color: #ff298e;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+a.filled-btn:hover {
+    background-color: #333;
+}
+
+.section-padding {
+    padding: 145px 0;
+}
+
+.how-area-title h2 {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.how-works-area {
+    color: #333;
+}
+
+.how-area-title p {
+    color: #8e8e93;
+    line-height: 26px;
+}
+
+.how-area-title {
+    margin-bottom: 50px;
+}
+
+.how-item-img-table {
+    height: 60px;
+    display: table;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.hwo-item-img-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.single-how-item p {
+    max-width: 200px;
+    margin: 0 auto;
+    line-height: 26px;
+    ;
+}
+
+.single-how-item {
+    background-size: cover;
+    padding: 100px 96px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.09);
+    min-height: 425px;
+    transition: 0.3s;
+}
+
+.services-area {
+    color: #fff;
+}
+
+.service-area-title h2 {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.service-area-title p {
+    opacity: 0.5;
+    line-height: 26px;
+}
+
+.single-service-item h6 {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.single-service-item {
+    padding: 35px;
+}
+
+.single-service-item p {
+    opacity: 0.5;
+    line-height: 26px;
+}
+
+.single-service-item i.fa {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.service-rate.rate-bg {
+    background-color: #fff;
+    margin-top: -30px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -30px;
+    padding: 65px 0px;
+}
+
+.service-rate.rate-bg p.pricing-label {
+    font-size: 100px;
+    font-weight: 700;
+    position: relative;
+    margin: 0;
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.service-rate.rate-bg p.pricing-label:before {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    content: "$";
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.service-rate.rate-bg p:nth-child(2) {
+    color: #8e8e93;
+    line-height: 24px;
+    margin-bottom: 35px;
+}
+
+.pricing-right-textbox {
+    height: 347px;
+    display: table;
+}
+
+.job-bg {
+    background-size: cover;
+    background-position: center;
+}
+
+.pricing-right-textbox p {
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 430px;
+    font-size: 24px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.job-bg {
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+}
+
+.job-bg:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #3e4a55;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.rate-bg {
+    background-size: cover;
+    background-position: center center;
+}
+
+.rate-bg {
+    background-size: cover;
+    background-position: center center;
+}
+
+.testimonial-section {
+    padding: 200px 0;
+}
+
+.service-rate.rate-bg {
+    box-shadow: 0 0 20px rgba(114, 114, 136, 0.32);
+}
+
+.single-testimonial-item h2 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.single-testimonial-item p {
+    color: #8e8e93;
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 20px;
+}
+
+.single-testimonial-item {
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.testimonial-meta p.meta-position {
+    color: #333;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.testimonial-meta p.meta-position span {
+    letter-spacing: 0;
+    color: #8e8e93;
+    font-size: 16px;
+}
+
+p.meta-name {
+    font-size: 16px;
+}
+
+.testimonial-meta p {
+    line-height: 26px;
+}
+
+.testimonial-meta p {
+    margin: 0;
+}
+
+.owl-controls .owl-dots div {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    border: 2px solid #e6e6e6;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.owl-controls .owl-dots div.active {
+    background-color: #333;
+    border: 1px solid #333;
+}
+
+.owl-controls .owl-dots {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -100px;
+}
+
+.brand-logos {
+    overflow: hidden;
+}
+
+.single-brand-logo {
+    float: left;
+}
+
+.brand-logo-area {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.single-brand-logo {
+    width: 20%;
+    text-align: center;
+}
+
+.single-brand-logo img {
+    max-width: 100px;
+}
+
+.start-project-bg {
+    background-size: cover;
+    background-position: center;
+}
+
+.start-project-text {
+    color: #fff;
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+.start-project-text p {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.start-project-text {}
+
+.start-project-area {
+    padding: 80px 0;
+}
+
+.start-project-bg {
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+}
+
+.start-project-bg:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2b3540;
+    content: "";
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.dark-bg {
+    background-color: #1a1a1a;
+    padding: 50px 0;
+}
+
+.footer-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.footer-menu ul li a {
+    color: #fff;
+    opacity: 0.5;
+    display: block;
+    padding: 17px;
+    transition: 0.3s;
+}
+
+.responsive-menu {
+    display: none;
+}
+
+a.video-play-btn:hover:after {
+    opacity: 1;
+}
+
+a.video-play-btn:hover i.fa {
+    color: #ff298e;
+    z-index: 5;
+    position: relative;
+}
+
+i.fa.fa-play {
+    transition: 0.5s;
+}
+
+.logo a img:hover {
+    opacity: 0.7;
+}
+
+.logo a img {
+    transition: 0.3s;
+}
+
+.footer-menu ul li a:hover {
+    opacity: 1;
+}
+
+.single-how-item:hover {
+    box-shadow: 0 0 0 #fff;
+    opacity: 0.7;
+}
